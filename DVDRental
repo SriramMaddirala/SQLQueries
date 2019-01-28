@@ -1,0 +1,25 @@
+SELECT first_name,last_name FROM actor;
+SELECT * FROM film;
+SELECT * FROM actor;
+SELECT actor_id FROM actor;
+/* Get first name, last name and email from customer */
+SELECT first_name, last_name, email FROM customer;
+SELECT DISTINCT * FROM film;
+SELECT DISTINCT release_year FROM film;
+SELECT DISTINCT rental_rate FROM film;
+/*Get every type of rating Movies can get in US*/
+SELECT DISTINCT rating FROM film;
+/* Get all customers with first name Jamie */
+SELECT * FROM customer WHERE first_name = 'Jamie';
+/* Get all customers with first name Jamie and last name Rice*/
+SELECT * FROM customer WHERE first_name = 'Jamie' AND last_name = 'Rice';
+/*Get all customers who got a rental costing less than 1 or more than 8 dollars */
+SELECT customer_id,amount FROM payment WHERE amount <= 1 OR amount >=8;
+SELECT email FROM customer
+WHERE first_name = 'Jared';
+SELECT * FROM payment
+WHERE amount = 8.99;
+SELECT * FROM payment
+WHERE amount >= 10.99 AND amount <11;
+SELECT * FROM customer 
+WHERE store_id=1 AND address_id >5;
